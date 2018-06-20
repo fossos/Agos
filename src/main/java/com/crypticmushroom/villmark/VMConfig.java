@@ -21,9 +21,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /**
  * PLEASE NOTE: IF YOU ARE GOING TO CHANGE ANY EXISTING
  * CONFIGURATION VARIABLES, YOU MUST DELETE YOUR EXISTING
- * planetbound.cfg FILE IN THE config FOLDER OF YOUR
+ * villmark.cfg FILE IN THE config FOLDER OF YOUR
  * TESTING DIRECTORY (normally named "run")
  */
+@Config(modid = VMCore.MOD_ID)
+@Config.LangKey(VMCore.MOD_ID + ".config.title")
 public class VMConfig
 {
     public static final Other other = new Other();
