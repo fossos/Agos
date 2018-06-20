@@ -1,0 +1,16 @@
+[
+{
+  "modid": "villmark",
+  "name": "Villmark",
+  "description": "A desert dimension mod for Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/cipherzerox/Villmark",
+  "updateUrl": "",
+  "authorList": ["Foss", "The Cryptic Mushroom Team"],
+  "credits": "Our contributors and planeteers of our community.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
