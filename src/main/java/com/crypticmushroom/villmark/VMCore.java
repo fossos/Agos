@@ -22,8 +22,9 @@ public class VMCore
     public static final String MC_VERSIONS = "[1.12.2]";
     public static final String UPDATE_JSON = "https://raw.githubusercontent.com/cipherzerox/Villmark/master/update.json";
 
-    @SidedProxy(clientSide = "com.crypticmushroom.villmark.client.ClientProxy", serverSide = "com.crypticmushroom.villmark.server.ServerProxy")
+    @SidedProxy(clientSide = "com.crypticmushroom.villmark.client.ClientProxy", serverSide = "com.crypticmushroom.villmark.CommonProxy")
     public static CommonProxy proxy;
+
     @Instance(MOD_ID)
     private static VMCore instance;
 
