@@ -1,6 +1,6 @@
 package com.crypticmushroom.agos;
 
-import com.crypticmushroom.agos.logger.VMLogDev;
+import com.crypticmushroom.agos.logger.AGLogDev;
 import com.crypticmushroom.agos.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -33,7 +33,7 @@ public class Agos
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        VMLogDev.printInfo("Running Pre-Initialization...");
+        AGLogDev.printInfo("Running Pre-Initialization...");
 
         proxy.preInit(event);
     }
@@ -41,7 +41,7 @@ public class Agos
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        VMLogDev.printInfo("Running Initialization...");
+        AGLogDev.printInfo("Running Initialization...");
 
         proxy.init(event);
     }
@@ -49,7 +49,7 @@ public class Agos
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-        VMLogDev.printInfo("Running Post-Initialization...");
+        AGLogDev.printInfo("Running Post-Initialization...");
 
         proxy.postInit(event);
     }

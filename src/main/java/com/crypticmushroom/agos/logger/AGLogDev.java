@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
  * Developer mode logging and debug logging
  * are two very different things.
  */
-public class VMLogDev
+public class AGLogDev
 {
     public static final Logger logDev = LogManager.getLogger(Agos.NAME + " Developer Mode");
 
