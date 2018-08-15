@@ -1,6 +1,7 @@
-package com.crypticmushroom.villmark;
+package com.crypticmushroom.agos;
 
-import com.crypticmushroom.villmark.logger.VMLogDev;
+import com.crypticmushroom.agos.logger.VMLogDev;
+import com.crypticmushroom.agos.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -9,26 +10,22 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-/**
- * Hey computer nerds. In this code, VM means, Villmark, not Virtual Machine. ;)
- */
-
-@Mod(modid = VMCore.MOD_ID, name = VMCore.NAME, version = VMCore.VERSION, acceptedMinecraftVersions = VMCore.MC_VERSIONS, updateJSON = VMCore.UPDATE_JSON)
-public class VMCore
+@Mod(modid = Agos.MOD_ID, name = Agos.NAME, version = Agos.VERSION, acceptedMinecraftVersions = Agos.MC_VERSIONS, updateJSON = Agos.UPDATE_JSON)
+public class Agos
 {
-    public static final String MOD_ID = "villmark";
-    public static final String NAME = "Villmark";
+    public static final String MOD_ID = "ag";
+    public static final String NAME = "Agos";
     public static final String VERSION = "1.0-dev";
     public static final String MC_VERSIONS = "[1.12.2]";
     public static final String UPDATE_JSON = "https://raw.githubusercontent.com/cipherzerox/Villmark/master/update.json";
 
-    @SidedProxy(clientSide = "com.crypticmushroom.villmark.client.ClientProxy", serverSide = "com.crypticmushroom.villmark.CommonProxy")
+    @SidedProxy(clientSide = "com.crypticmushroom.agos.proxy.ClientProxy", serverSide = "com.crypticmushroom.agos.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     @Instance(MOD_ID)
-    private static VMCore instance;
+    private static Agos instance;
 
-    public static VMCore instance()
+    public static Agos instance()
     {
         return instance;
     }

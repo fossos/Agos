@@ -1,13 +1,9 @@
-package com.crypticmushroom.villmark;
+package com.crypticmushroom.agos;
 
-import com.crypticmushroom.villmark.VMCore;
-import com.crypticmushroom.villmark.logger.VMLogDev;
-import com.crypticmushroom.villmark.logger.VMLogger;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 /*
@@ -21,12 +17,12 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /**
  * PLEASE NOTE: IF YOU ARE GOING TO CHANGE ANY EXISTING
  * CONFIGURATION VARIABLES, YOU MUST DELETE YOUR EXISTING
- * villmark.cfg FILE IN THE config FOLDER OF YOUR
+ * agos.cfg FILE IN THE config FOLDER OF YOUR
  * TESTING DIRECTORY (normally named "run")
  */
-@Config(modid = VMCore.MOD_ID)
-@Config.LangKey(VMCore.MOD_ID + ".config.title")
-public class VMConfig
+@Config(modid = Agos.MOD_ID)
+@Config.LangKey(Agos.MOD_ID + ".config.title")
+public class AgosConfig
 {
     public static final Other other = new Other();
 
@@ -41,7 +37,7 @@ public class VMConfig
         }
     }
 
-    @Mod.EventBusSubscriber(modid = VMCore.MOD_ID)
+    @Mod.EventBusSubscriber(modid = Agos.MOD_ID)
     private static class EventHandler
     {
         /**
@@ -51,8 +47,8 @@ public class VMConfig
          */
         @SubscribeEvent
         public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
-            if (event.getModID().equals(VMCore.MOD_ID)) {
-                ConfigManager.sync(VMCore.MOD_ID, Config.Type.INSTANCE);
+            if (event.getModID().equals(Agos.MOD_ID)) {
+                ConfigManager.sync(Agos.MOD_ID, Config.Type.INSTANCE);
             }
         }
     }

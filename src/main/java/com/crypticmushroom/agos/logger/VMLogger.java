@@ -1,12 +1,12 @@
-package com.crypticmushroom.villmark.logger;
+package com.crypticmushroom.agos.logger;
 
-import com.crypticmushroom.villmark.VMCore;
+import com.crypticmushroom.agos.Agos;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class VMLogger
 {
-    public static final Logger log = LogManager.getLogger(VMCore.NAME);
+    public static final Logger log = LogManager.getLogger(Agos.NAME);
 
     public static void printInfo(Object messageInfo)
     {

@@ -1,7 +1,7 @@
-package com.crypticmushroom.villmark.logger;
+package com.crypticmushroom.agos.logger;
 
-import com.crypticmushroom.villmark.VMConfig;
-import com.crypticmushroom.villmark.VMCore;
+import com.crypticmushroom.agos.AgosConfig;
+import com.crypticmushroom.agos.Agos;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,11 +12,11 @@ import org.apache.logging.log4j.Logger;
  */
 public class VMLogDev
 {
-    public static final Logger logDev = LogManager.getLogger(VMCore.NAME + " Developer Mode");
+    public static final Logger logDev = LogManager.getLogger(Agos.NAME + " Developer Mode");
 
     public static void printInfo(Object messageDevelop)
     {
-        if(VMConfig.other.developer.developerMode)
+        if(AgosConfig.other.developer.developerMode)
         {
             logDev.info(messageDevelop.toString());
         }
@@ -28,7 +28,7 @@ public class VMLogDev
 
     public static void printWarn(Object messageDevelop)
     {
-        if(VMConfig.other.developer.developerMode)
+        if(AgosConfig.other.developer.developerMode)
         {
             logDev.warn(messageDevelop.toString());
         }
@@ -40,7 +40,7 @@ public class VMLogDev
 
     public static void printError(Object messageDevelop)
     {
-        if(VMConfig.other.developer.developerMode)
+        if(AgosConfig.other.developer.developerMode)
         {
             logDev.error(messageDevelop.toString());
         }

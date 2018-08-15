@@ -24,9 +24,9 @@ else if (project.hasProperty('dev_username'))
     username = findProperty('dev_username')
 }
 
-version = project.mod_version
-group = project.mod_group // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = project.archives_base_name
+version = "1.0-dev"
+group = "com.crypticmushroom.agos" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "agos"
 
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8 // Need this here so eclipse task generates correctly.
 compileJava

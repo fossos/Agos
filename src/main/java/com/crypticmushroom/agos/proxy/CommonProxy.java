@@ -1,4 +1,4 @@
-package com.crypticmushroom.villmark;
+package com.crypticmushroom.agos.proxy;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
