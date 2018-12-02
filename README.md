@@ -1,8 +1,5 @@
 # Villmark
-A desert dimension mod for Minecraft created by the Foss and developed by the Cryptic Mushroom team.
 
-## Can I have a .jar of this mod?
-Well, we won't give you one, but if you know how to build this mod using gradle, knock yourself out. If you are testing the mod, I recommend using the MultiMC launcher.
+Villmark is a futurist desert dimension mod, created and developed by Foss and hosted by the Cryptic Mushroom.
+If you want to help with the mod, just go in the CM's discord https://discord.gg/Q725ZWs.
 
-## Do you all have a Discord server?
-https://discord.gg/Q725ZWs
